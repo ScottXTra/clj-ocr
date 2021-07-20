@@ -1,5 +1,6 @@
 (ns clj-ocr.utils
-  (:require [clj-http.client :as client])
+  (:require [clj-http.client :as client]
+            [clojure.java.io :as io])
   )
 
 (def data-url
@@ -8,13 +9,13 @@
 (def langs
   ["ara" "asm" "eng" "afr"])
 
-(defn get-lang-data 
-  [l]
-(clojure.java.io/copy
- (:body (client/get (str "https://github.com/tesseract-ocr/tessdata/blob/master/" l ".traineddata?raw=true")))
- (java.io.File. (str l ".traineddata"))) 
-  1)
+ (defn get-lang-data [l]
+   (with-open [in (io/input-stream (str "https://github.com/tesseract-ocr/tessdata/blob/master/" l ".traineddata?raw=true"))
+               out (io/output-stream (str l ".traineddata"))]
+     (io/copy in out))
+   1)
 
 (defn get-all-langs
   []
   (pmap get-lang-data langs))
+
