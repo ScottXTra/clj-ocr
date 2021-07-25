@@ -4,7 +4,8 @@ A Clojure wrapper for Tesseract OCR
 
 ## Usage
 
-FIXME
+##Tess4J
+http://tess4j.sourceforge.net/docs/docs-0.4/net/sourceforge/tess4j/Tesseract.html
 
 ## License
 

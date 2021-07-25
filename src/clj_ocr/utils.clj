@@ -15,6 +15,11 @@
      (io/copy in out))
    1)
 
+(defn get-web-image [url filename]
+  (with-open [in (io/input-stream url)
+              out (io/output-stream filename)]
+    (io/copy in out)))
+
 (defn get-all-langs
   []
   (pmap get-lang-data langs))

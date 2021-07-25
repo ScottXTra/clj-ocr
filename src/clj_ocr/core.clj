@@ -1,8 +1,10 @@
 (ns clj-ocr.core
-  (:require clj-ocr.utils)
+  (:require clj-ocr.utils
+            [clojure.java.io :as io])
   (:import
    [net.sourceforge.tess4j  ITesseract Tesseract]
-   [javax.imageio ImageIO])
+   [javax.imageio ImageIO]
+   )
   (:gen-class))
 
 (defn foo
@@ -17,7 +19,7 @@
 ;; returns -> text from the image 
 (defn do-ocr [bi tess-instance]
   (.doOCR tess-instance bi))
-
+ 
 (defn set-language 
   [lang]
   (let [new-lang-ins instance]
