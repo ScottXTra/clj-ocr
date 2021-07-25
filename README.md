@@ -5,7 +5,7 @@ A Clojure wrapper for Tesseract OCR
 ## Usage
 Before using you must download train data for the language that you would like to preform OCR on.
 A function has been included to simplify this.
-In the clj-ocr.utils namespace, simply call: 
+In the **clj-ocr.utils** namespace, simply call: 
 ```clojure
 (get-lang-data "<ISO 639-3 standard language code>")
 ```
@@ -22,7 +22,7 @@ Example for German:
 Codes can be looked up [here](https://iso639-3.sil.org/code_tables/639/data)
 not every language code will work. It pulls from [here](https://github.com/tesseract-ocr/tessdata).
 
-To run OCR on an image, in clj-ocr.core simply call: 
+To run OCR on an image, in **clj-ocr.core** simply call: 
 ```clojure
 (do-ocr 
     (ImageIO/read (clojure.java.io/file "<filename>")) 
