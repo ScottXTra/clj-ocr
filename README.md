@@ -23,8 +23,17 @@ Codes can be looked up [here](https://iso639-3.sil.org/code_tables/639/data)
 not every language code will work. It pulls from [here](https://github.com/tesseract-ocr/tessdata)
 
 To run OCR on an image, simply call: 
-
-
+```clojure
+(do-ocr 
+    (ImageIO/read (clojure.java.io/file "<filename>")) 
+    (set-language "eng"))
+```
+Example:
+```clojure
+(do-ocr 
+    (ImageIO/read (clojure.java.io/file "<filename>")) 
+    (set-language "eng"))
+```
 
 
 ## Tess4J Docs
