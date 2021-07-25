@@ -1,4 +1,4 @@
-(defproject clj-ocr "0.1.0-SNAPSHOT"
+(defproject org.clojars.scottxtra/clj-ocr "0.1.0-SNAPSHOT"
   :description "Clojure wrapper for Tesseract OCR"
   :url "https://github.com/ScottXTra/clj-ocr"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
