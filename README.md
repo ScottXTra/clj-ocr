@@ -7,10 +7,13 @@ Before using you must download train data for the language that you would like t
 A function has been included to simplify this.
 Simply run 
 > (get-lang-data "<ISO 639-3 standard language code>")
+
 Example:
 > (get-lang-data "eng")
+
 for English or
 > (get-lang-data "deu")
+
 for German in the clj-ocr.utils namespace to download.
 Codes can be looked up [here](https://iso639-3.sil.org/code_tables/639/data)
 not every language code will work. It pulls from [here](https://github.com/tesseract-ocr/tessdata)
