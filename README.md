@@ -1,7 +1,11 @@
 # clj-ocr
-
 A Clojure wrapper for Tesseract OCR
 
+## Installation
+Add the following dependency to your project.clj file:
+```clojure
+[org.clojars.scottxtra/clj-ocr "0.1.0-SNAPSHOT"]
+```
 ## Usage
 Before using you must download train data for the language that you would like to preform OCR on.
 A function has been included to simplify this.
