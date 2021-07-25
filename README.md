@@ -20,7 +20,7 @@ Example for German:
 ```
 
 Codes can be looked up [here](https://iso639-3.sil.org/code_tables/639/data)
-not every language code will work. It pulls from [here](https://github.com/tesseract-ocr/tessdata)
+not every language code will work. It pulls from [here](https://github.com/tesseract-ocr/tessdata).
 
 To run OCR on an image, simply call: 
 ```clojure
@@ -34,7 +34,12 @@ Example:
     (ImageIO/read (clojure.java.io/file "pic.png")) 
     (set-language "eng"))
 ```
+## Implementation 
+This project is not meant to wrap the entire Tess4j wapper. It is meant to simplify the use of the most commonly used parts of Tesseract OCR.
 
+Currently Implemented:
+- doOCR
+- setLanguage
 
 ## Tess4J Docs
 http://tess4j.sourceforge.net/docs/docs-0.4/net/sourceforge/tess4j/Tesseract.html
