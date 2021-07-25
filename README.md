@@ -31,7 +31,7 @@ To run OCR on an image, simply call:
 Example:
 ```clojure
 (do-ocr 
-    (ImageIO/read (clojure.java.io/file "<filename>")) 
+    (ImageIO/read (clojure.java.io/file "pic.png")) 
     (set-language "eng"))
 ```
 
