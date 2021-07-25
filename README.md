@@ -22,7 +22,7 @@ Example for German:
 Codes can be looked up [here](https://iso639-3.sil.org/code_tables/639/data)
 not every language code will work. It pulls from [here](https://github.com/tesseract-ocr/tessdata).
 
-To run OCR on an image, simply call: 
+To run OCR on an image, in clj-ocr.core simply call: 
 ```clojure
 (do-ocr 
     (ImageIO/read (clojure.java.io/file "<filename>")) 
