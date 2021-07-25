@@ -46,8 +46,7 @@ Currently Implemented:
 - setLanguage
 
 ## Tess4J Docs
-http://tess4j.sourceforge.net/docs/docs-0.4/net/sourceforge/tess4j/Tesseract.html
-
+http://tess4j.sourceforge.net/docs/docs-4.4/
 ## License
 
 Copyright © 2021 FIXME
